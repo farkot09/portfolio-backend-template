@@ -1,0 +1,46 @@
+{
+  "servicios": [
+    {
+      "id": "apis-restful",
+      "titulo": "APIs RESTful",
+      "descripcion": "Diseño e implementación de APIs RESTful con documentación completa, autenticación JWT, rate limiting y validación de datos.",
+      "icono": "image/api.svg",
+      "tags": ["Express.js", "NestJS", "Swagger"]
+    },
+    {
+      "id": "autenticacion",
+      "titulo": "Autenticación & Autorización",
+      "descripcion": "Sistemas de autenticación seguros con JWT, OAuth2, roles y permisos granulares para proteger tus aplicaciones.",
+      "icono": "image/auth.svg",
+      "tags": ["JWT", "OAuth2", "RBAC"]
+    },
+    {
+      "id": "bases-datos",
+      "titulo": "Bases de Datos",
+      "descripcion": "Optimización de consultas, diseño de esquemas, migraciones y gestión de datos con MySQL, PostgreSQL y Redis.",
+      "icono": "image/database.svg",
+      "tags": ["MySQL", "PostgreSQL", "Redis"]
+    },
+    {
+      "id": "microservicios",
+      "titulo": "Microservicios",
+      "descripcion": "Arquitectura de microservicios con comunicación asíncrona, balanceo de carga y escalabilidad horizontal.",
+      "icono": "image/microservices.svg",
+      "tags": ["Docker", "Kubernetes", "Message Queues"]
+    },
+    {
+      "id": "testing-cicd",
+      "titulo": "Testing & CI/CD",
+      "descripcion": "Implementación de pruebas unitarias, de integración y pipelines de CI/CD para garantizar calidad y despliegues automáticos.",
+      "icono": "image/testing.svg",
+      "tags": ["Jest", "GitHub Actions", "Docker"]
+    },
+    {
+      "id": "monitoreo",
+      "titulo": "Monitoreo & Logs",
+      "descripcion": "Sistemas de monitoreo en tiempo real, logging estructurado y alertas para mantener aplicaciones saludables.",
+      "icono": "image/monitoring.svg",
+      "tags": ["Prometheus", "Grafana", "ELK Stack"]
+    }
+  ]
+}

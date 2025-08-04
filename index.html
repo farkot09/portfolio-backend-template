@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Grajales | Desarrollador Backend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- ======== ENCABEZADO ======== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">VG.</a>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#hero" class="nav-link">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li><a href="#servicios-backend" class="nav-link">Servicios</a></li>
+                        <li><a href="#codigo-backend" class="nav-link">Código</a></li>
+                        <li><a href="#metricas" class="nav-link">Métricas</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                    <label for="theme-toggle" class="toggle-label">
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== SECCIÓN HERO ======== -->
+        <section id="hero">
+            <div class="hero-contenido">
+                <h1>Hola, soy <span>Victor Grajales</span></h1>
+                <p class="subtitulo">Desarrollador Backend de Colombia, especializado en crear soluciones web robustas y eficientes con Node.js.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Proyectos Completados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Endpoints Desarrollados</span>
+                    </div>
+                </div>
+                <a href="#contacto" class="cta-button">Hablemos de tu proyecto</a>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN SOBRE MÍ ======== -->
+        <section id="sobre-mi" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Sobre Mí</h2>
+                <div class="sobre-mi-contenido">
+                    <p>
+                        Con más de <strong>3 años de experiencia</strong>, he dedicado mi carrera a construir y optimizar el motor que impulsa las aplicaciones web. Mi viaje en la programación comenzó a los 18 años y desde entonces, mi pasión ha sido transformar ideas complejas en software funcional y escalable.
+                    </p>
+                    <p>
+                        Soy <strong>Tecnólogo en Desarrollo de Software del SENA</strong> y he fortalecido mis habilidades con formación continua en NestJS, Next.JS y arquitecturas de software modernas. Actualmente, colaboro en proyectos como desarrollador freelance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN PROYECTOS ======== -->
+        <section id="proyectos" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Proyectos Recientes</h2>
+                <div id="proyectos-container" class="proyectos-grid">
+                    <!-- Los proyectos se cargarán dinámicamente desde projects.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN HABILIDADES ======== -->
+        <section id="habilidades" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Mi Stack Tecnológico</h2>
+                <p class="section-subtitulo">Con un fuerte enfoque en el desarrollo Backend, estas son las tecnologías con las que construyo soluciones robustas y eficientes.</p>
+                
+                <div id="habilidades-container" class="habilidades-wrapper">
+                    <!-- Las habilidades se cargarán dinámicamente desde stack.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN SERVICIOS BACKEND ======== -->
+        <section id="servicios-backend" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Servicios Backend</h2>
+                <p class="section-subtitulo">Especializado en arquitecturas robustas y servicios escalables que impulsan aplicaciones de alto rendimiento.</p>
+                
+                <div id="servicios-container" class="servicios-grid">
+                    <!-- Los servicios se cargarán dinámicamente desde servicios_backend.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN CÓDIGO BACKEND ======== -->
+        <section id="codigo-backend" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Ejemplos de Código</h2>
+                <p class="section-subtitulo">Muestra de mi estilo de programación y patrones de diseño que implemento en mis proyectos.</p>
+                
+                <div class="codigo-grid">
+                    <div class="codigo-card">
+                        <div class="codigo-header">
+                            <h3>API REST con NestJS</h3>
+                            <span class="codigo-lang">TypeScript</span>
+                        </div>
+                        <div class="codigo-content">
+                            <pre><code class="language-typescript">@Controller('users')
+export class UsersController {
+  constructor(private usersService: UsersService) {}
+
+  @Get()
+  @UseGuards(JwtAuthGuard)
+  async findAll(): Promise&lt;User[]&gt; {
+    return this.usersService.findAll();
+  }
+
+  @Post()
+  @UseGuards(JwtAuthGuard)
+  @UsePipes(new ValidationPipe())
+  async create(@Body() createUserDto: CreateUserDto): Promise&lt;User&gt; {
+    return this.usersService.create(createUserDto);
+  }
+
+  @Get(':id')
+  @UseGuards(JwtAuthGuard)
+  async findOne(@Param('id') id: string): Promise&lt;User&gt; {
+    return this.usersService.findOne(+id);
+  }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="codigo-card">
+                        <div class="codigo-header">
+                            <h3>Servicio de Autenticación</h3>
+                            <span class="codigo-lang">Node.js</span>
+                        </div>
+                        <div class="codigo-content">
+                            <pre><code class="language-javascript">class AuthService {
+  async validateUser(email: string, password: string): Promise&lt;any&gt; {
+    const user = await this.usersService.findByEmail(email);
+    
+    if (user && await bcrypt.compare(password, user.password)) {
+      const { password, ...result } = user;
+      return result;
+    }
+    return null;
+  }
+
+  async login(user: any) {
+    const payload = { email: user.email, sub: user.id };
+    return {
+      access_token: this.jwtService.sign(payload),
+      user: {
+        id: user.id,
+        email: user.email,
+        role: user.role
+      }
+    };
+  }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="codigo-card">
+                        <div class="codigo-header">
+                            <h3>Middleware de Rate Limiting</h3>
+                            <span class="codigo-lang">Express.js</span>
+                        </div>
+                        <div class="codigo-content">
+                            <pre><code class="language-javascript">const rateLimit = require('express-rate-limit');
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutos
+  max: 100, // máximo 100 requests por ventana
+  message: {
+    error: 'Demasiadas peticiones desde esta IP'
+  },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+app.use('/api/', limiter);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN MÉTRICAS ======== -->
+        <section id="metricas" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">Métricas de Rendimiento</h2>
+                <p class="section-subtitulo">Estadísticas de mis proyectos y tecnologías más utilizadas.</p>
+                
+                <div class="metricas-grid">
+                    <div class="metrica-card">
+                        <div class="metrica-valor" data-target="15">0</div>
+                        <div class="metrica-label">Proyectos Completados</div>
+                        <div class="metrica-desc">Aplicaciones web y APIs en producción</div>
+                    </div>
+                    
+                    <div class="metrica-card">
+                        <div class="metrica-valor" data-target="99">0</div>
+                        <div class="metrica-label">Uptime Promedio</div>
+                        <div class="metrica-desc">Porcentaje de disponibilidad</div>
+                    </div>
+                    
+                    <div class="metrica-card">
+                        <div class="metrica-valor" data-target="500">0</div>
+                        <div class="metrica-label">Endpoints Desarrollados</div>
+                        <div class="metrica-desc">APIs RESTful y GraphQL</div>
+                    </div>
+                    
+                    <div class="metrica-card">
+                        <div class="metrica-valor" data-target="3">0</div>
+                        <div class="metrica-label">Años de Experiencia</div>
+                        <div class="metrica-desc">Desarrollo backend profesional</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SECCIÓN CONTACTO ======== -->
+        <section id="contacto" class="fade-in-section">
+            <div class="container">
+                <h2 class="section-titulo">¿Listo para empezar?</h2>
+                <p>
+                    Estoy abierto a nuevas oportunidades y colaboraciones. Si tienes un proyecto en mente o crees que podemos construir algo increíble juntos, ¡hablemos!
+                </p>
+                <a href="mailto:viagramo2011@gmail.com" class="cta-button">Envíame un correo</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                 <a href="https://www.linkedin.com/in/viktor-grajales-34b990125/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                 <a href="https://github.com/farkot09/" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub">
+                </a>
+            </div>
+            <p>&copy; 2024 Victor Grajales. Diseñado y desarrollado con pasión.</p>
+        </div>
+    </footer>
+
+    <!-- ======== SCRIPT ======== -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

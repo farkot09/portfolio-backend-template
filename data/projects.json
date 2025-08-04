@@ -1,0 +1,34 @@
+{
+  "proyectos": [
+    {
+      "id": 1,
+      "titulo": "Logitrav",
+      "descripcion": "Plataforma SaaS para la gestión integral de operaciones logísticas de vehículos, facilitando el seguimiento y control de flotas en tiempo real.",
+      "url_proyecto": "https://logitrav.servicioslogisticoscyg.com/",
+      "url_github": "https://github.com/farkot09/",
+      "tecnologias": ["Node.js", "React", "MySQL", "Docker"],
+      "imagen": null,
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "titulo": "Nexus",
+      "descripcion": "Sistema de gestión documental diseñado para optimizar y automatizar los complejos procesos de importación y exportación de mercancías.",
+      "url_proyecto": "https://lsabun.com/NEXUS/",
+      "url_github": "https://github.com/farkot09/",
+      "tecnologias": ["NestJS", "TypeScript", "PostgreSQL", "Redis"],
+      "imagen": null,
+      "destacado": true
+    },
+    {
+      "id": 3,
+      "titulo": "SIGICON",
+      "descripcion": "Aplicación para el registro digital y sistemático de inspecciones de contenedores, mejorando la seguridad y trazabilidad en la cadena de suministro.",
+      "url_proyecto": "https://sigicon.com/",
+      "url_github": "https://github.com/farkot09/",
+      "tecnologias": ["PHP", "MySQL", "JavaScript", "Docker"],
+      "imagen": null,
+      "destacado": true
+    }
+  ]
+}

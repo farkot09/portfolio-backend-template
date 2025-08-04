@@ -1,0 +1,124 @@
+{
+  "categorias": [
+    {
+      "id": "backend",
+      "titulo": "Backend (Mi Fuerte)",
+      "habilidades": [
+        {
+          "id": "nodejs",
+          "nombre": "Node.js",
+          "icono": "image/nodejs.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "nestjs",
+          "nombre": "NestJS",
+          "icono": "image/nestjs.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "mysql",
+          "nombre": "MySQL",
+          "icono": "image/mysql.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "mongodb",
+          "nombre": "MongoDB",
+          "icono": "image/mongodb.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "redis",
+          "nombre": "Redis",
+          "icono": "image/redis.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "jwt",
+          "nombre": "JWT",
+          "icono": "image/jwt.svg",
+          "tipo": "svg"
+        },
+        {
+          "id": "php",
+          "nombre": "PHP",
+          "icono": "image/php.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "servidores",
+          "nombre": "Servidores",
+          "icono": "image/linux.svg",
+          "tipo": "svg"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "titulo": "Frontend",
+      "habilidades": [
+        {
+          "id": "react",
+          "nombre": "React",
+          "icono": "image/react.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "nextjs",
+          "nombre": "Next.JS",
+          "icono": "image/nextjs.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "javascript",
+          "nombre": "JavaScript",
+          "icono": "image/javascript.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "typescript",
+          "nombre": "TypeScript",
+          "icono": "image/typescript.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "tailwind",
+          "nombre": "Tailwind",
+          "icono": "image/tailwind.svg",
+          "tipo": "imagen"
+        }
+      ]
+    },
+    {
+      "id": "herramientas",
+      "titulo": "Herramientas",
+      "habilidades": [
+        {
+          "id": "github",
+          "nombre": "GitHub",
+          "icono": "image/github.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "npm",
+          "nombre": "npm",
+          "icono": "image/npm.svg",
+          "tipo": "imagen"
+        },
+        {
+          "id": "terminal",
+          "nombre": "Terminal",
+          "icono": "image/terminal.svg",
+          "tipo": "svg"
+        },
+        {
+          "id": "cursor",
+          "nombre": "Cursor",
+          "icono": "image/cursor.svg",
+          "tipo": "svg"
+        }
+      ]
+    }
+  ]
+}
