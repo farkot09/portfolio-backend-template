@@ -1,5 +1,29 @@
 # Portfolio Profesional - Backend Developer
 
+## 📸 Vista Previa
+
+### 🖥️ Capturas de Pantalla del Portfolio
+
+![Portfolio - Vista General](image/screenshots/portfolio-vista-general.png)
+*Vista general del portfolio en modo claro*
+
+![Portfolio - Modo Oscuro](image/screenshots/portfolio-modo-oscuro.png)
+*Portfolio en modo oscuro con todas las secciones*
+
+![Portfolio - Sección Hero](image/screenshots/portfolio-hero-section.png)
+*Sección Hero con estadísticas y presentación personal*
+
+![Portfolio - Habilidades](image/screenshots/portfolio-habilidades.png)
+*Sección de habilidades organizadas por categorías*
+
+![Portfolio - Servicios Backend](image/screenshots/portfolio-servicios-backend.png)
+*Servicios backend especializados*
+
+![Portfolio - Responsive Mobile](image/screenshots/portfolio-mobile.png)
+*Vista responsive en dispositivos móviles*
+
+---
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -38,7 +62,9 @@
 │   ├── 📄 database.svg
 │   ├── 📄 microservices.svg
 │   ├── 📄 testing.svg
-│   └── 📄 monitoring.svg
+│   ├── 📄 monitoring.svg
+│   └── 📁 screenshots/
+│       └── 📄 (Capturas de pantalla del portfolio)
 └── 📄 README.md (Esta documentación)
 ```
 
@@ -244,6 +270,35 @@ El sistema requiere los siguientes iconos en la carpeta `image/`:
 - **Rendimiento**: Los iconos locales cargan más rápido que URLs externas
 - **Confiabilidad**: No dependen de servicios externos que puedan fallar
 
+## 📸 Capturas de Pantalla
+
+### 📁 Carpeta: `image/screenshots/`
+
+Esta carpeta contiene las capturas de pantalla que se muestran en la sección "Vista Previa" del README, así como capturas adicionales para documentación.
+
+### 📋 Capturas Mostradas en el README
+
+- **`portfolio-vista-general.png`**: Vista completa del portfolio en modo claro
+- **`portfolio-modo-oscuro.png`**: Portfolio completo en modo oscuro
+- **`portfolio-hero-section.png`**: Detalle de la sección Hero con estadísticas
+- **`portfolio-habilidades.png`**: Sección de habilidades organizadas por categorías
+- **`portfolio-servicios-backend.png`**: Servicios backend especializados
+- **`portfolio-mobile.png`**: Vista responsive en dispositivos móviles
+
+### 🎯 Propósito de las Capturas
+
+- **Vista Previa**: Mostrar cómo se ve el portfolio antes de descargarlo
+- **Documentación**: Demostrar las funcionalidades implementadas
+- **Presentación**: Para portafolios y presentaciones profesionales
+- **Referencia**: Para mantener consistencia en el diseño
+
+### 📱 Formatos Recomendados
+
+- **Resolución**: Mínimo 1920x1080 para capturas de escritorio
+- **Formato**: PNG para mejor calidad
+- **Nombres**: Descriptivos y consistentes
+- **Organización**: Por secciones o funcionalidades
+
 ## 🛠️ Modularización de Servicios Backend
 
 ### 📁 Archivo: `data/servicios_backend.json`
@@ -310,6 +365,7 @@ Los servicios backend se cargan dinámicamente desde `data/servicios_backend.jso
 - **🛠️ Habilidades Modulares**: Las habilidades se cargan desde `data/stack.json`
 - **🔧 Servicios Backend Modulares**: Los servicios se cargan desde `data/servicios_backend.json`
 - **🖼️ Iconos Locales**: Todos los iconos se cargan desde la carpeta `image/` para mejor rendimiento
+- **📸 Capturas de Pantalla**: Documentación visual en `image/screenshots/`
 - **🎯 Animaciones Suaves**: Efectos de aparición y transiciones
 - **📱 Navegación Suave**: Scroll suave entre secciones
 - **🔢 Contadores Animados**: Para métricas y estadísticas
@@ -347,6 +403,7 @@ Los servicios backend se cargan dinámicamente desde `data/servicios_backend.jso
 - **Carga de Habilidades**: Las habilidades se cargan automáticamente desde `data/stack.json`
 - **Carga de Servicios Backend**: Los servicios se cargan automáticamente desde `data/servicios_backend.json`
 - **Iconos Locales**: Todos los iconos deben estar en la carpeta `image/` como archivos SVG
+- **Capturas de Pantalla**: Se almacenan en `image/screenshots/` para documentación visual
 - **Manejo de Errores**: Si no se puede cargar algún JSON, se muestra un mensaje de error elegante
 - **Responsive**: Funciona perfectamente en móviles, tablets y desktop
 - **Accesibilidad**: Incluye atributos `alt`, `title` y navegación por teclado
