@@ -14,7 +14,7 @@
       "id": 2,
       "titulo": "Nexus",
       "descripcion": "Sistema de gestión documental diseñado para optimizar y automatizar los complejos procesos de importación y exportación de mercancías.",
-      "url_proyecto": "https://lsabun.com/NEXUS/",
+      "url_proyecto": "https://nexus.contrologistics.com.co/",
       "url_github": "https://github.com/farkot09/",
       "tecnologias": ["NestJS", "TypeScript", "PostgreSQL", "Redis"],
       "imagen": null,
@@ -28,6 +28,16 @@
       "url_github": "https://github.com/farkot09/",
       "tecnologias": ["PHP", "MySQL", "JavaScript", "Docker"],
       "imagen": null,
+      "destacado": true
+    },
+    {
+      "id": 4,
+      "titulo": "Nexo-Bot",
+      "descripcion": "Bot de WhatsApp para la asignacion y gestion de turnos, creado con Node.js y SQLite. Proyecto de codigo abierto.",
+      "url_proyecto": "https://github.com/farkot09/nexo-bot",
+      "url_github": "https://github.com/farkot09/nexo-bot",
+      "tecnologias": ["Node.js", "SQLite", "WhatsApp API", "TypeScript"],
+      "imagen": "https://github.com/farkot09/nexo-bot/blob/main/project-images/img1.png?raw=true",
       "destacado": true
     }
   ]
