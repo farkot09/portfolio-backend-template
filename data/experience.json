@@ -1,0 +1,49 @@
+{
+  "experiencia": [
+    {
+      "id": 1,
+      "empresa": "Contrologistics",
+      "cargo": "Desarrollador de Software",
+      "fecha_inicio": "2023",
+      "fecha_fin": "2024",
+      "descripcion": "Desarrollé la plataforma NEXUS para el control de la documentación en procesos de importación y exportación.",
+      "tecnologias": ["NestJS", "TypeScript", "PostgreSQL", "Redis", "Docker"],
+      "proyectos": ["NEXUS"],
+      "logros": [
+        "Implementación de sistema de gestión documental integral",
+        "Optimización de procesos de importación/exportación",
+        "Desarrollo de APIs RESTful con documentación completa"
+      ]
+    },
+    {
+      "id": 2,
+      "empresa": "Contrologistics",
+      "cargo": "Desarrollador de Software",
+      "fecha_inicio": "2019",
+      "fecha_fin": "2023",
+      "descripcion": "Desarrollé la plataforma SIGICON (Sistema de Gestión e Inspección de Contenedores) para el registro fotográfico de procesos de vaciado y llenado de contenedores.",
+      "tecnologias": ["PHP", "MySQL", "JavaScript", "Docker", "REST APIs"],
+      "proyectos": ["SIGICON"],
+      "logros": [
+        "Sistema de registro fotográfico automatizado",
+        "Mejora en trazabilidad de contenedores",
+        "Reducción de tiempo en procesos de inspección"
+      ]
+    },
+    {
+      "id": 3,
+      "empresa": "Servicios Logísticos C&G",
+      "cargo": "Desarrollador de Software",
+      "fecha_inicio": "2017",
+      "fecha_fin": "2019",
+      "descripcion": "Desarrollé LOGITRAV (Logística de Trazabilidad Vehicular) una plataforma para el control de inventario, improntas y despacho en vehículos de importación y exportación.",
+      "tecnologias": ["Node.js", "React", "MySQL", "Docker", "Git"],
+      "proyectos": ["LOGITRAV"],
+      "logros": [
+        "Plataforma SaaS para gestión logística integral",
+        "Control de flotas en tiempo real",
+        "Sistema de trazabilidad vehicular completo"
+      ]
+    }
+  ]
+}

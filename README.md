@@ -36,7 +36,8 @@
 ├── 📁 data/
 │   ├── 📄 projects.json (Datos de proyectos)
 │   ├── 📄 stack.json (Datos de habilidades)
-│   └── 📄 servicios_backend.json (Datos de servicios backend)
+│   ├── 📄 servicios_backend.json (Datos de servicios backend)
+│   └── 📄 experience.json (Datos de experiencia laboral)
 ├── 📁 image/
 │   ├── 📄 nodejs.svg
 │   ├── 📄 nestjs.svg
@@ -355,6 +356,82 @@ Los servicios backend se cargan dinámicamente desde `data/servicios_backend.jso
 - **🎨 Consistente**: Mismo diseño y animaciones
 - **🎯 Organizado**: Servicios claros y bien estructurados
 
+## 🛠️ Modularización de Experiencia Laboral
+
+### 📁 Archivo: `data/experience.json`
+
+La experiencia laboral se carga dinámicamente desde `data/experience.json`. Este archivo contiene toda la información profesional organizada cronológicamente.
+
+### 📋 Estructura del JSON
+
+```json
+{
+  "experiencia": [
+    {
+      "id": 1,
+      "empresa": "Contrologistics",
+      "cargo": "Desarrollador de Software",
+      "fecha_inicio": "2023",
+      "fecha_fin": "2024",
+      "descripcion": "Desarrollé la plataforma NEXUS para el control de la documentación en procesos de importación y exportación.",
+      "tecnologias": ["NestJS", "TypeScript", "PostgreSQL", "Redis", "Docker"],
+      "proyectos": ["NEXUS"],
+      "logros": [
+        "Implementación de sistema de gestión documental integral",
+        "Optimización de procesos de importación/exportación",
+        "Desarrollo de APIs RESTful con documentación completa"
+      ]
+    }
+  ]
+}
+```
+
+### 📋 Campos Disponibles para Experiencia
+
+| Campo | Tipo | Descripción | Requerido |
+|-------|------|-------------|-----------|
+| `id` | number | Identificador único de la experiencia | ✅ |
+| `empresa` | string | Nombre de la empresa | ✅ |
+| `cargo` | string | Cargo o posición | ✅ |
+| `fecha_inicio` | string | Año de inicio | ✅ |
+| `fecha_fin` | string | Año de finalización | ✅ |
+| `descripcion` | string | Descripción del rol y responsabilidades | ✅ |
+| `tecnologias` | array | Array de tecnologías utilizadas | ❌ |
+| `proyectos` | array | Array de proyectos principales | ❌ |
+| `logros` | array | Array de logros y contribuciones | ❌ |
+
+### 🎯 Cómo Agregar Nueva Experiencia
+
+1. **Abrir el archivo**: `data/experience.json`
+2. **Agregar nueva experiencia**:
+   ```json
+   {
+     "id": 4,
+     "empresa": "Nueva Empresa",
+     "cargo": "Nuevo Cargo",
+     "fecha_inicio": "2024",
+     "fecha_fin": "Actual",
+     "descripcion": "Descripción detallada del rol y responsabilidades.",
+     "tecnologias": ["Tecnología1", "Tecnología2"],
+     "proyectos": ["Proyecto1", "Proyecto2"],
+     "logros": [
+       "Logro principal 1",
+       "Logro principal 2",
+       "Logro principal 3"
+     ]
+   }
+   ```
+
+### 🚀 Beneficios de la Modularización de Experiencia
+
+- **🔧 Mantenimiento Fácil**: Solo editar JSON para agregar experiencia
+- **⚡ Carga Rápida**: Los datos se cargan dinámicamente
+- **🛡️ Robusto**: Manejo de errores incluido
+- **📱 Responsive**: Mantiene el diseño responsive
+- **🎨 Consistente**: Mismo diseño y animaciones
+- **🎯 Organizado**: Experiencia clara y bien estructurada
+- **📊 Visualización**: Timeline interactivo en el portfolio principal
+
 ## 🔧 Características del Sistema
 
 ### ✅ Funcionalidades Implementadas
@@ -364,6 +441,7 @@ Los servicios backend se cargan dinámicamente desde `data/servicios_backend.jso
 - **⚡ Carga Dinámica**: Los proyectos se cargan desde `data/projects.json`
 - **🛠️ Habilidades Modulares**: Las habilidades se cargan desde `data/stack.json`
 - **🔧 Servicios Backend Modulares**: Los servicios se cargan desde `data/servicios_backend.json`
+- **💼 Experiencia Laboral Modular**: La experiencia se carga desde `data/experience.json`
 - **🖼️ Iconos Locales**: Todos los iconos se cargan desde la carpeta `image/` para mejor rendimiento
 - **📸 Capturas de Pantalla**: Documentación visual en `image/screenshots/`
 - **🎯 Animaciones Suaves**: Efectos de aparición y transiciones
@@ -402,6 +480,7 @@ Los servicios backend se cargan dinámicamente desde `data/servicios_backend.jso
 - **Carga de Proyectos**: Los proyectos se cargan automáticamente desde `data/projects.json`
 - **Carga de Habilidades**: Las habilidades se cargan automáticamente desde `data/stack.json`
 - **Carga de Servicios Backend**: Los servicios se cargan automáticamente desde `data/servicios_backend.json`
+- **Carga de Experiencia Laboral**: La experiencia se carga automáticamente desde `data/experience.json`
 - **Iconos Locales**: Todos los iconos deben estar en la carpeta `image/` como archivos SVG
 - **Capturas de Pantalla**: Se almacenan en `image/screenshots/` para documentación visual
 - **Manejo de Errores**: Si no se puede cargar algún JSON, se muestra un mensaje de error elegante

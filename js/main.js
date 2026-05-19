@@ -235,4 +235,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cargar servicios backend al inicializar la página
     loadServicios();
+
+    // ======== CARGA DINÁMICA DE EXPERIENCIA LABORAL ========
+    const loadExperience = async () => {
+        try {
+            const response = await fetch('data/experience.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            const experienciaContainer = document.getElementById('experiencia-container');
+            
+            if (experienciaContainer && data.experiencia) {
+                experienciaContainer.innerHTML = data.experiencia.map(exp => `
+                    <div class="experiencia-item" data-experiencia-id="${exp.id}">
+                        <div class="experiencia-empresa">${exp.empresa}</div>
+                        <div class="experiencia-cargo">${exp.cargo}</div>
+                        <div class="experiencia-fecha">${exp.fecha_inicio} - ${exp.fecha_fin}</div>
+                        <div class="experiencia-descripcion">${exp.descripcion}</div>
+                        <div class="experiencia-tecnologias">
+                            ${exp.tecnologias.map(tech => `<span class="experiencia-tecnologia">${tech}</span>`).join('')}
+                        </div>
+                        <div class="experiencia-logros">
+                            <h4>Logros Principales:</h4>
+                            <ul>
+                                ${exp.logros.map(logro => `<li>${logro}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `).join('');
+                
+                console.log('✅ Experiencia laboral cargada exitosamente desde experience.json');
+            }
+        } catch (error) {
+            console.error('❌ Error al cargar la experiencia laboral:', error);
+            const experienciaContainer = document.getElementById('experiencia-container');
+            if (experienciaContainer) {
+                experienciaContainer.innerHTML = `
+                    <div class="error-message">
+                        <p>No se pudo cargar la experiencia laboral. Por favor, verifica que el archivo data/experience.json esté disponible.</p>
+                    </div>
+                `;
+            }
+        }
+    };
+
+    // Cargar experiencia laboral al inicializar la página
+    loadExperience();
 });
